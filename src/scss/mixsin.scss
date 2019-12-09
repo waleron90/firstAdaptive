@@ -1,0 +1,26 @@
+@mixin pseudo ($content: "",
+    $display: inline-block,
+    $width: 40px,
+    $height: 40px,
+    $borderRad: 50%,
+    $color: #FF3E79,
+    $repeat: no-repeat,
+    $pos: 50% 50%) {
+        content: $content;
+        display: $display;
+        width: $width;
+        height: $height;
+        border-radius: $borderRad;
+        background-repeat: $repeat;
+        background-position: $pos;
+        background-color: $color;
+    }
+
+@mixin elementWrap ($display: flex,
+    $flex-wrap: wrap,
+    $justify-content: space-around) {
+        display: $display;
+        flex-wrap: $flex-wrap;
+        justify-content: $justify-content;
+        
+}

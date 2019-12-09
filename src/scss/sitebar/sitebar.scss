@@ -1,3 +1,4 @@
+@import "../mixsin.scss";
 
 .sitebar {
     margin: $sbros;
@@ -14,7 +15,7 @@
         
             .logo {
             margin-right: auto;
-            padding-left: 16px;
+            padding-left: $padding;
          }
     }
 }
@@ -32,10 +33,10 @@
         margin-top: $sbros;
         padding-left: $sbros;
         
-        padding-bottom: 8px;
+        padding-bottom: $padding - 8;
 
         li {
-            padding-bottom: 24px;
+            padding-bottom: $padding + 8;
 
             .a {
                 position: relative;
@@ -48,7 +49,8 @@
                     top: -5px;
                     border: $border;
                     border-left: $border;
-                    width: 140%; height: 150%;
+                    width: 140%;
+                    height: 150%;
                     }
 
                 &:hover::before {
@@ -70,20 +72,20 @@
         margin-bottom: 9px;
 
         .communication-ul__li {
-            padding-right: 16px;
+            padding-right: $padding;
         }
     }
 
     .footer-sitebar__contact-ul {
-        margin-bottom: 8px;
+        margin-bottom: $padding - 8;
 
         .number-li {
-            padding-top: 12px;
+            padding-top: $padding - 6;
 
             .contact-number {
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 32px;
+                font-weight: $fontWeight + 200;
+                font-size: $fontSize + 8;
+                line-height: $fontHeight * 2;
                 letter-spacing: -0.6px;
             }
         }
@@ -94,7 +96,7 @@
         display: flex;
 
         .lang-ul__li {
-            padding-right: 7px;
+            padding-right: $padding - 9;
         }
 
         .active {

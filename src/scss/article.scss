@@ -1,3 +1,5 @@
+@import "/mixsin.scss";
+
 /* Общие для article */
 
 .article__header {
@@ -5,7 +7,7 @@
     transform: matrix(-1, 0, 0, 1, 0, 0);
     background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
     border-top: 1px solid #D9FFF5;
-    padding: 16px;
+    padding: $padding;
 }
 
 .h2 {
@@ -14,16 +16,16 @@
     text-transform: uppercase;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     color: $a-linc;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-weight: $fontWeight - 100;
+    font-size: $fontSize;
+    line-height: $fontHeight + 8;
     margin: $sbros;
 }
 
 .card-list {
     display: flex;
     flex-wrap: nowrap;
-    padding-left: 16px;
+    padding-left: $padding;
     height: 100px;
     overflow: auto; 
 }
@@ -34,12 +36,12 @@
 .card-list__item {
     display: flex;
     align-items: center;
-    margin-right: 16px;
-    margin-bottom: 16px;
-    border: 1px solid #EAEAEA;
+    margin-right: $padding;
+    margin-bottom: $padding;
+    border: $border1px;
     border-radius: 6px;
     min-width: 240px;
-    padding: 16px;
+    padding: $padding;
     background-color: $bgColorhead;
     
         
@@ -66,19 +68,19 @@
         flex-direction: column;
         min-width: 240px;
         min-height: 160px;
-        border: 1px solid #EAEAEA;
+        border: $border1px;
         background: $bgColorhead;
-        margin: 16px;
+        margin: $padding;
     }
 
     .li-technology__p {
-        padding: 16px;
+        padding: $padding;
     }
 
     .list-ul__a {
         align-self: flex-end;
-        padding-right: 16px;
-        padding-bottom: 16px; 
+        padding-right: $padding;
+        padding-bottom: $padding; 
     }
 }
 
@@ -93,23 +95,23 @@
 .table-card {
     min-width: 260px;
     max-height: 200px;
-    border: 1px solid #EAEAEA;
+    border: $border1px;
     background: $bgColorhead;
     margin: 8px;
-    margin-right: 16px;
+    margin-right: $padding;
     position: relative;
     border-collapse: collapse;
-    padding: 16px;
+    padding: $padding;
 }
 
 .tb__tr__header {
     text-align: left;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
+    font-size: $fontSize - 2;
+    font-weight: $fontWeight - 100;
+    line-height: $padding;
     color: $a-linc;
-    padding-top: 16px;
-    padding-left: 16px;
+    padding-top: $padding;
+    padding-left: $padding;
     mix-blend-mode: normal;
     opacity: 0.72
 }
@@ -118,10 +120,10 @@
     padding: 0;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    padding-bottom: 16px;
-    padding-left: 16px;
+    font-size: $fontSize - 2;
+    line-height: $padding + 2;
+    padding-bottom: $padding;
+    padding-left: $padding;
 }
 
 .last-child {
@@ -129,25 +131,43 @@
 }
 
 .text-prais {
-    margin: 16px;
+    margin: $padding;
 }
 
 .strong-text {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-    
-}
-
-.wrapper__a {
-    align-self: center;
-    
+    @include elementWrap;
 }
 
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include elementWrap;
     margin: 0 16px 32px 16px; 
+
+    & {
+        align-self: center;
+        
+    }
+
+}
+
+
+
+
+
+.about-info {
+    padding: 0 4px 19px 4px;
+    border-top: 1px solid #D9FFF5;
+
+    .wrapper-footer {
+        padding-top: $padding;
+
+        & {
+            text-align: center;
+            line-height: $padding;
+            color: $a-linc;
+    
+        }
+
+    }
+
+    
 }

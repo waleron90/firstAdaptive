@@ -1,4 +1,5 @@
 @import "var/var.scss";
+@import "/mixsin.scss";
 
 /* сброс стандартных стилей button */
 
@@ -10,7 +11,7 @@ button {
     font-weight: 500;
     border: none;
     background: none;
-    padding: 0;
+    padding: $sbros;
 }
 
 button:active, button:focus {
@@ -21,15 +22,6 @@ button::-moz-focus-inner {
     border: 0 !important;
 }
 
-/* стили псевдоэлементов */
-
-.btn::before {
-    content: "";
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
 
 /* действия при клике */
 
@@ -39,6 +31,7 @@ button::-moz-focus-inner {
     transform: scale(1.2);
     transition-duration: 0.4s;
 }
+
 /* линия с header-main */
 
 .vert-line::after { 
@@ -50,47 +43,54 @@ button::-moz-focus-inner {
     height: 32px;
 }
 
-/* подключение фона и картинок */
-
-
 /* кнопки с sitebara */
 
 .btn-close::before {   
-    background: $button-color url("../img/btn_close.svg") no-repeat 50% 50%;
+    background: url("../img/btn_close.svg");
+    @include pseudo;
 }
 
 .btn-setings::before {
-    background: $button-color url("../img/btn_setings.svg") no-repeat 50% 50%;
+    background: url("../img/btn_setings.svg");
+    @include pseudo;
 }
 
 .btn-search::before {
-    background: $button-color url("../img/btn_search.svg") no-repeat 50% 50%;
+    background: url("../img/btn_search.svg");
+    @include pseudo;
 }
 
 .btn-communication::before {
-    background:$button-color url("../img/icon_tel.svg") no-repeat 50% 50%;
+    background: url("../img/icon_tel.svg");
+    @include pseudo;
 }
 
 .btn-message::before {
-    background: $button-color url("../img/icon_message.svg") no-repeat 50% 50%;
+    background: url("../img/icon_message.svg");
+    @include pseudo;
 }
 
 .btn-info::before {
-    background: $button-color url("../img/icon_feedback.svg") no-repeat 50% 50%;
+    background: url("../img/icon_feedback.svg");
+    @include pseudo;
 }
 
 /* кнопки с main */
 
 .btn-open::before {
-    background: $button-color url("../img/btn_open.svg") no-repeat 50% 50%;
+    background: url("../img/btn_open.svg");
+    @include pseudo;
 }
 
+
 .btn-setings::before {
-    background: $button-color url("../img/btn_setings.svg") no-repeat 50% 50%;
+    background: url("../img/btn_setings.svg");
+    @include pseudo;
 }
 
 .btn-search-border::before {
-    background: $button-color url("../img/btn_searh-border.svg") no-repeat 50% 50%;
+    background: url("../img/btn_searh-border.svg");
+    @include pseudo;
 }
 
 .opening::before {

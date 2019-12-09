@@ -38,12 +38,12 @@ html {
   }
 
 .body {
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    line-height: $fontHeight;
+    font-size: $fontSize;
     padding: $sbros;
     margin: $sbros;
-    font-family: $fontFamily;
-    font-weight: 500;
-    line-height: 24px;
-    font-size: 16px;
     letter-spacing: -0.2px;
     background-color: $bgColor;
     color: $text;
@@ -56,8 +56,9 @@ html {
 }
 
 .h1 {
-  font-size: 28px;
-  line-height: 40px;
+  display: flex;
+  font-size: $fontSize + 12;
+  line-height: $fontHeight + 16;
   letter-spacing: -0.6px;
   margin: $sbros;
   margin: 24px 16px 24px 0;
