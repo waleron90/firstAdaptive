@@ -1,0 +1,50 @@
+@import "../mixsin.scss";
+
+.prais-table {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto; 
+}
+
+
+
+.table-card {
+    min-width: 260px;
+    max-height: 200px;
+    border: $border1px;
+    background: $bgColorhead;
+    margin: $padding;
+    position: relative;
+    border-collapse: collapse;
+    padding: $padding;
+}
+
+.tb__tr__header {
+    text-align: left;
+    font-size: $fontSize - 2;
+    font-weight: $fontWeight - 100;
+    line-height: $padding;
+    color: $a-linc;
+    padding-top: $padding;
+    padding-left: $padding;
+    mix-blend-mode: normal;
+    opacity: 0.72
+}
+
+.tb__tr__paragraf {
+    padding: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fontSize - 2;
+    line-height: $padding + 2;
+    padding-bottom: $padding;
+    padding-left: $padding;
+}
+
+.last-child {
+    padding-bottom: 20px;
+}
+
+.text-prais {
+    margin: $padding;
+}

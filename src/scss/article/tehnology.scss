@@ -1,0 +1,29 @@
+@import "../mixsin.scss";
+
+.technology__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: auto; 
+
+    .list-ul__li-technology {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        min-width: 240px;
+        min-height: 160px;
+        border: $border1px;
+        background: $bgColorhead;
+        margin: $padding;
+    }
+
+    .li-technology__p {
+        padding: $padding;
+    }
+
+    .list-ul__a {
+        align-self: flex-end;
+        padding-right: $padding;
+        padding-bottom: $padding; 
+    }
+}

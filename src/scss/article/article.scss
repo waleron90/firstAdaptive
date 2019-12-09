@@ -1,0 +1,35 @@
+@import "../mixsin.scss";
+
+/* Общие для article */
+
+.article__header {
+    display: block;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    border-top: 1px solid #D9FFF5;
+    padding: $padding;
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.h2 {
+    text-transform: uppercase;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    color: $a-linc;
+    font-weight: $fontWeight - 100;
+    font-size: $fontSize;
+    line-height: $fontHeight + 8;
+    margin: $sbros;
+}
+
+
+  
+
+
+
+
+
+

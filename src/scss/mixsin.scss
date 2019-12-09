@@ -17,10 +17,7 @@
     }
 
 @mixin elementWrap ($display: flex,
-    $flex-wrap: wrap,
-    $justify-content: space-around) {
+    $flex-wrap: wrap) {
         display: $display;
         flex-wrap: $flex-wrap;
-        justify-content: $justify-content;
-        
 }

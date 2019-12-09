@@ -111,7 +111,7 @@ button::-moz-focus-inner {
 
 /* карточки с aside */
 
-.btn__arrow::after {
+/*.btn__arrow::after {
     content: "";
     display: flex;
     width: 40px;
@@ -123,13 +123,13 @@ button::-moz-focus-inner {
   
 /* действия при клике */
 
-.btn__arrow:hover::after {
+/*.btn__arrow:hover::after {
    opacity: 0.4;
    box-shadow: 0 0 5px 0 #34495e;
    transform: scale(1.2);
    transition-duration: 0.4s;
 }
-
+*/
 .btn__order::before {
     content: "ЗАКАЗАТЬ";
     position: absolute;
