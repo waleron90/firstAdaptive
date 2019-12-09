@@ -1,0 +1,176 @@
+@import "var/var.scss";
+
+/* сброс стандартных стилей button */
+
+button {
+    font-family: $fontFamily;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+button:active, button:focus {
+    outline: none !important;
+}
+
+button::-moz-focus-inner {
+    border: 0 !important;
+}
+
+/* стили псевдоэлементов */
+
+.btn::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* действия при клике */
+
+.btn:hover::before {
+    opacity: 0.6;
+    box-shadow: 0 0 5px 0 #34495e;
+    transform: scale(1.2);
+    transition-duration: 0.4s;
+}
+/* линия с header-main */
+
+.vert-line::after { 
+    content: " ";
+    position: absolute;
+    top: 28px;
+    background: #EAEAEA;
+    width: 2px;
+    height: 32px;
+}
+
+/* подключение фона и картинок */
+
+
+/* кнопки с sitebara */
+
+.btn-close::before {   
+    background: $button-color url("../img/btn_close.svg") no-repeat 50% 50%;
+}
+
+.btn-setings::before {
+    background: $button-color url("../img/btn_setings.svg") no-repeat 50% 50%;
+}
+
+.btn-search::before {
+    background: $button-color url("../img/btn_search.svg") no-repeat 50% 50%;
+}
+
+.btn-communication::before {
+    background:$button-color url("../img/icon_tel.svg") no-repeat 50% 50%;
+}
+
+.btn-message::before {
+    background: $button-color url("../img/icon_message.svg") no-repeat 50% 50%;
+}
+
+.btn-info::before {
+    background: $button-color url("../img/icon_feedback.svg") no-repeat 50% 50%;
+}
+
+/* кнопки с main */
+
+.btn-open::before {
+    background: $button-color url("../img/btn_open.svg") no-repeat 50% 50%;
+}
+
+.btn-setings::before {
+    background: $button-color url("../img/btn_setings.svg") no-repeat 50% 50%;
+}
+
+.btn-search-border::before {
+    background: $button-color url("../img/btn_searh-border.svg") no-repeat 50% 50%;
+}
+
+.opening::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-repeat : no-repeat;
+    background-position: center;
+    margin: auto;
+
+}
+
+/* действия при клике */
+
+.opening-modal-open::before {
+    background-image: url("../img/icon_open.svg");
+}
+
+/* карточки с aside */
+
+.btn__arrow::after {
+    content: "";
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    border-radius: 50%; 
+    background: #FFFFFF url("../img/strelka.svg") no-repeat 50% 50%;
+  }
+  
+/* действия при клике */
+
+.btn__arrow:hover::after {
+   opacity: 0.4;
+   box-shadow: 0 0 5px 0 #34495e;
+   transform: scale(1.2);
+   transition-duration: 0.4s;
+}
+
+.btn__order::before {
+    content: "ЗАКАЗАТЬ";
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    color: $bgColorhead;
+    display: flex;
+    padding-top: 4px;
+    padding-left: 12px;
+    font-family: $fontFamily;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    width: 119px;
+    height: 32px;
+    border-radius: 16px;
+    background: $button-color url("../img/order.svg") no-repeat 90% 50%;
+}
+
+.btn__order:hover::before {
+    opacity: 0.7;
+    box-shadow: 0 0 5px 0 #34495e;
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+
+/* действия при клике */
+
+.btn_prais-open::after {
+    content: "";
+    display: flex;
+    align-self: center;
+    background: #fff url("../img/strelka.svg") no-repeat 90% 50%;
+    width: 6px;
+    height: 12px;
+   
+}
+
+.btn_prais-open:hover::after {
+    opacity: 0.7;
+    box-shadow: 0 0 5px 0 #34495e;
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}

@@ -1,0 +1,31 @@
+@media only screen
+and (min-device-height : 678px)
+and (max-device-height : 1200px) {
+    /* sitebar */
+
+
+
+
+
+
+.sitebar {
+    min-width: 320px;
+    padding-top: 18px;
+
+    .menu-sitebar {
+        min-height: 876px;
+
+        .menu-ul {
+            padding-top: 4px;
+            padding-bottom: $sbros;
+        }
+
+        .footer-sitebar__contact-ul {
+            margin-bottom: 40px;
+        }
+
+    }
+
+    } 
+
+}

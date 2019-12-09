@@ -1,0 +1,102 @@
+/* добавление шрифтов */
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url('../fonts/TTLakes-Regular.woff2') format('woff2'),
+      url('../fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url('../fonts/TTLakes-Medium.woff2') format('woff2'),
+      url('../fonts/TTLakes-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url('../fonts/TTLakes-Bold.woff2') format('woff2'),
+    url('../fonts/TTLakes-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* общие стили */
+  
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.body {
+    padding: $sbros;
+    margin: $sbros;
+    font-family: $fontFamily;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    background-color: $bgColor;
+    color: $text;
+  }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-align: center;
+}
+
+.h1 {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  margin: $sbros;
+  margin: 24px 16px 24px 0;
+  padding-left: 12px;
+  border: $border;
+  border-left: $border-left;
+}
+
+.ul {
+  margin: $sbros;
+  padding: $sbros;
+}  
+
+.li {
+	list-style-type: none;
+}
+
+.a {
+  text-decoration: none;
+  
+  color: $text;
+  letter-spacing: -0.2px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.a:hover {
+  color: $a-linc;
+}
+
+.p {
+  margin: $sbros;
+  font-weight: 400;
+}
+
+.container {
+ 
+  margin: 0 auto;
+}
+
+.strong {
+  font-weight: 500;
+}

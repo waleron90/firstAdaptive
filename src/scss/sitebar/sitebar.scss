@@ -1,0 +1,112 @@
+
+.sitebar {
+    margin: $sbros;
+    padding: $header-padding;
+    max-width:320px;
+    float: left;
+    display: none;
+    
+    .header-sitebar {
+        display: flex;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        margin-bottom: 21px;
+        
+            .logo {
+            margin-right: auto;
+            padding-left: 16px;
+         }
+    }
+}
+
+.menu-sitebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+    .menu-ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: $sbros;
+        padding-left: $sbros;
+        
+        padding-bottom: 8px;
+
+        li {
+            padding-bottom: 24px;
+
+            .a {
+                position: relative;
+            
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -24px;
+                    top: -5px;
+                    border: $border;
+                    border-left: $border;
+                    width: 140%; height: 150%;
+                    }
+
+                &:hover::before {
+                    color: $a-linc;
+                    border: $border;
+                    border-left: $border-left;
+                    }
+
+            }
+
+        }
+    }
+}
+
+.footer-sitebar {
+
+    .footer-sitebar__communication-ul {
+        display: flex;
+        margin-bottom: 9px;
+
+        .communication-ul__li {
+            padding-right: 16px;
+        }
+    }
+
+    .footer-sitebar__contact-ul {
+        margin-bottom: 8px;
+
+        .number-li {
+            padding-top: 12px;
+
+            .contact-number {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -0.6px;
+            }
+        }
+
+    }
+
+    .footer-sitebar__lang-ul {
+        display: flex;
+
+        .lang-ul__li {
+            padding-right: 7px;
+        }
+
+        .active {
+            color: $a-linc;
+        }
+
+
+
+    }
+
+
+}
+
+
+
