@@ -1,0 +1,122 @@
+@import "/mixsin.scss";
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $bgColorhead;
+    padding: 18px 16px 11px 16px;
+}
+    
+.header-block1 {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+    &__btn-open::before {
+        background: url("../img/btn_open.svg");
+        @include pseudo;
+        margin-right: $padding;    
+    }
+
+    &__vert-line {
+        padding-right: $padding; 
+
+        &::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 12px;
+            right: 0;
+            background: #EAEAEA;
+            width: 2px;
+            height: 32px;
+
+        }
+    }
+}
+
+.header-block2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__communication {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        display: none;
+        
+    }
+
+    &__vert-line {
+        position: relative;
+        padding-right: $padding; 
+    }
+
+    &__btn-communication::before {
+        background: url("../img/icon_tel.svg");
+        @include pseudo;
+        margin-right: $padding;
+    }
+
+    &__btn-message::before {
+        background: url("../img/icon_message.svg");
+        @include pseudo;
+        margin-right: $padding;
+    }
+
+    &__btn-info::before {
+        background: url("../img/icon_feedback.svg");
+        @include pseudo;
+        margin-right: $padding;
+    }
+
+    &__vertline::after { 
+        content: " ";
+        position: absolute;
+        top: 28px;
+        background: #EAEAEA;
+        width: 2px;
+        height: 32px;
+    }
+
+    &__btn-setings::before {
+        background: url("../img/btn_setings.svg");
+        @include pseudo;
+        margin-right: $padding;
+        margin-left: $padding + 4;
+    }
+
+    &__btn-search-border::before {
+        background: url("../img/btn_searh-border.svg");
+        @include pseudo;
+    }
+}
+
+
+
+
+@media only screen
+and (min-device-width : 767px)
+and (max-device-width : 1119px) {
+
+    .header-main {
+        padding-left: $padding + 8;
+        padding-right: $padding + 8;
+    }
+    
+    .header-block2__communication {
+        display: flex;
+    }
+}
+
+@media only screen
+and (min-device-width : 1120px) {
+
+    .header-main {
+        display: none;
+    }
+
+}

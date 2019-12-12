@@ -2,28 +2,41 @@
 
 /* Общие для article */
 
-.article__header {
+.article-header {
     display: block;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
     border-top: 1px solid #D9FFF5;
-    padding: $padding;
+    padding: 15px 16px 16px 16px;
+
+    &__title {
+        text-transform: uppercase;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        color: $a-linc;
+        font-weight: $fontWeight - 100;
+        font-size: $fontSize;
+       
+        margin: $sbros;
+    }
 }
 
-.text {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+@media only screen
+and (min-device-width : 767px)
+and (max-device-width : 1119px) {
+
+    .article-header {
+        padding-left: $padding + 8;
+    }
 }
-.h2 {
-    text-transform: uppercase;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    color: $a-linc;
-    font-weight: $fontWeight - 100;
-    font-size: $fontSize;
-    line-height: $fontHeight + 8;
-    margin: $sbros;
+
+@media only screen
+and (min-device-width : 1120px) {
+
+    .article-header {
+        padding-left: $padding * 2;
+    }
 }
+
 
 
   

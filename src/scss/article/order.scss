@@ -1,0 +1,35 @@
+.swiper-container {
+    display: table;
+    padding: 31px 24px 24px 24px;
+}
+
+.order {
+    display: table-row;
+    &__item {
+        display: table-cell;
+
+
+    }
+
+
+    &__text {
+        display: table-cell;
+
+
+    }
+}
+
+.order-header {
+    display: table-row;
+
+    &__item-header {
+        display: table-header-group;
+    }
+
+    &__item {
+        color: red;
+        display: table-cell;
+    }
+
+
+}

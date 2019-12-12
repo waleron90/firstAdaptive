@@ -32,16 +32,14 @@ button::-moz-focus-inner {
     transition-duration: 0.4s;
 }
 
+.btn:hover::after {
+    opacity: 0.6;
+    box-shadow: 0 0 5px 0 #34495e;
+    transform: scale(1.2);
+    transition-duration: 0.4s;
+}
 /* линия с header-main */
 
-.vert-line::after { 
-    content: " ";
-    position: absolute;
-    top: 28px;
-    background: #EAEAEA;
-    width: 2px;
-    height: 32px;
-}
 
 /* кнопки с sitebara */
 
@@ -60,76 +58,7 @@ button::-moz-focus-inner {
     @include pseudo;
 }
 
-.btn-communication::before {
-    background: url("../img/icon_tel.svg");
-    @include pseudo;
-}
 
-.btn-message::before {
-    background: url("../img/icon_message.svg");
-    @include pseudo;
-}
-
-.btn-info::before {
-    background: url("../img/icon_feedback.svg");
-    @include pseudo;
-}
-
-/* кнопки с main */
-
-.btn-open::before {
-    background: url("../img/btn_open.svg");
-    @include pseudo;
-}
-
-
-.btn-setings::before {
-    background: url("../img/btn_setings.svg");
-    @include pseudo;
-}
-
-.btn-search-border::before {
-    background: url("../img/btn_searh-border.svg");
-    @include pseudo;
-}
-
-.opening::before {
-    content: "";
-    width: 24px;
-    height: 24px;
-    background-repeat : no-repeat;
-    background-position: center;
-    margin: auto;
-
-}
-
-/* действия при клике */
-
-.opening-modal-open::before {
-    background-image: url("../img/icon_open.svg");
-}
-
-/* карточки с aside */
-
-/*.btn__arrow::after {
-    content: "";
-    display: flex;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #FF3E79;
-    border-radius: 50%; 
-    background: #FFFFFF url("../img/strelka.svg") no-repeat 50% 50%;
-  }
-  
-/* действия при клике */
-
-/*.btn__arrow:hover::after {
-   opacity: 0.4;
-   box-shadow: 0 0 5px 0 #34495e;
-   transform: scale(1.2);
-   transition-duration: 0.4s;
-}
-*/
 .btn__order::before {
     content: "ЗАКАЗАТЬ";
     position: absolute;
@@ -158,19 +87,4 @@ button::-moz-focus-inner {
 
 /* действия при клике */
 
-.btn_prais-open::after {
-    content: "";
-    display: flex;
-    align-self: center;
-    background: #fff url("../img/strelka.svg") no-repeat 90% 50%;
-    width: 6px;
-    height: 12px;
-   
-}
 
-.btn_prais-open:hover::after {
-    opacity: 0.7;
-    box-shadow: 0 0 5px 0 #34495e;
-    transform: scale(1.1);
-    transition-duration: 0.4s;
-}

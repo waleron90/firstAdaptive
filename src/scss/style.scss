@@ -1,13 +1,20 @@
 @import "/normalize.css";
 @import "var/var.scss";
 @import "/base.scss";
+@import "/container.scss";
+@import "/header.scss";
+@import "/main/header-main.scss";
+@import "/main/menu.scss";
+@import "/main/main.scss";
 @import "/sitebar/sitebar.scss";
 @import "/button-icons.scss";
 @import "/media.scss";
-@import "/main.scss";
 @import "article/article.scss";
 @import "article/brand.scss";
 @import "article/tehnology.scss";
 @import "article/prais.scss";
+@import "article/order.scss";
 @import "article/footer.scss";
 @import "/mixsin.scss";
+
+

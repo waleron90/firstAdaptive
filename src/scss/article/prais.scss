@@ -46,5 +46,52 @@
 }
 
 .text-prais {
+    max-width: 421px;
+    font-weight: $fontWeight - 100;
+    font-size: $fontSize - 2;
+    line-height: $fontHeight - 4;
+    letter-spacing: 0.2px;
     margin: $padding;
+}
+
+.wrapper-prais {
+    display: flex;
+    padding: $padding;
+    
+}
+
+.strong-text {
+    display: inline;
+}
+
+.wrapper__a {
+    display: inline-block;
+    padding-left: $padding;
+
+    &::after {
+        content: "";
+        display: flex;    
+        background: #fff url("../img/strelka.svg") no-repeat 90% 50%;
+        width: 6px;
+        height: 12px;
+        border: $border;
+        border-radius: 50%;
+    }
+
+    &:hover::after {
+        opacity: 0.7;
+        box-shadow: 0 0 5px 0 #34495e;
+        transform: scale(1.5);
+        transition-duration: 0.4s;
+        
+    }
+}
+
+@media only screen
+and (min-device-width : 767px) {
+
+    .section-prais {
+       display: none;
+    
+    }
 }
